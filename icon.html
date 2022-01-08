@@ -1,0 +1,50 @@
+<html>
+
+<head>
+ 
+    <span id = heart><i class="fa fa-heart-o" aria-hidden="true" ></i> </span>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   
+     <style>
+      .fa-heart-o {
+        color: red;
+        cursor: pointer;
+      }
+      
+      .fa-heart {
+        color: red;
+        cursor: pointer;
+      }
+    </style> 
+      
+
+</head>
+
+
+<body>
+    
+     <script>
+
+
+    $(document).ready(function(){
+        $("#heart").click(function(){
+          if($("#heart").hasClass("liked")){
+            $("#heart").html('<i class="fa fa-heart-o" aria-hidden="true"></i>');
+            $("#heart").removeClass("liked");
+          }else{
+            $("#heart").html('<i class="fa fa-heart" aria-hidden="true"></i>');
+            $("#heart").addClass("liked");
+          }
+        });
+      });
+    </script>   
+
+
+</body>
+
+
+
+
+
+</html>
